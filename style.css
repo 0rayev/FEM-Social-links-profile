@@ -17,7 +17,7 @@
     --clr-green: hsl(75, 94%, 57%);
     --clr-white: hsl(0, 0%, 100%);
     --clr-grey: hsl(0, 0%, 20%);
-    --clr-darkGrey: hsl(0, 0%, 12%);
+    --clr-darkGrey: hsl(0, 0%, 12%);    
     --clr-offBlack: hsl(0, 0%, 8%);
 }
 
@@ -105,7 +105,12 @@ button {
     padding-block: 0.8rem;
     font-size: var(--fs-400);
     font-weight: var(--fw-semiBold);
+}
+
+button:hover {
     cursor: pointer;
+    background-color: var(--clr-green);
+    color: var(--clr-offBlack);
 }
 
 footer {
