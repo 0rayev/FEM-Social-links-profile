@@ -1,0 +1,124 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+:root {
+    --fm-sans: "Inter", sans-serif;
+
+    --fw-bold: 700;
+    --fw-semiBold: 600;
+    --fw-regular: 400;
+
+    --fs-400: 0.875rem;
+    --fs-600: 1.05rem;
+    --fs-700: 1.8rem;
+
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 20%);
+    --clr-darkGrey: hsl(0, 0%, 12%);
+    --clr-offBlack: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--fm-sans);
+    font-size: var(--fm-sans);
+    font-weight: var(--fw-regular);
+    color: var(--clr-white);
+    background-color: var(--clr-offBlack);
+    height: 100%;
+}
+
+img {
+    display: block;
+    max-width: 30%;
+    border-radius: 10rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 95%;
+}
+
+
+.wrapper {
+    padding: 2rem;
+    border-radius: 0.7rem;
+    text-align: center;    
+    background-color: var(--clr-darkGrey);
+    max-width: 600px;
+    margin-inline: 1.2rem;
+}
+
+h1 {
+    font-weight: var(--fw-semiBold);
+    font-size: var(--fs-700);
+}
+
+h2 {
+    font-weight: var(--fw-semiBold);
+    font-size: var(--fs-600);
+    color: var(--clr-green);
+    margin-block: 0.5rem;
+}
+
+p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 94%;
+    border-radius: 0.4rem;
+    color: var(--clr-white);
+    background-color: var(--clr-grey);
+    border: none;
+    padding-block: 0.8rem;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-semiBold);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+
